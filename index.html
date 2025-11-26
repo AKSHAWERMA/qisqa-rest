@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book-a-Pod - qisqarest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Book-a-Pod - qisqarest" />
+    <link rel="canonical" href="https://jumpy-mysterious-panther-0s2sqb.teleporthq.app/book-a-pod" />
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        .navigation-link, .navigation-toggle, .navigation-mobile-close, .navigation-mobile-link, .navigation-logo-text {
+          transition-duration: 0s;
+        }
+        .navigation-mobile-overlay {
+          transition-duration: 0s;
+        }
+        .navigation-mobile-active .navigation-mobile-link, .navigation-mobile-active .navigation-mobile-cta {
+          animation: none;
+          opacity: 1;
+          transform: translateX(0);
+        }
+        .navigation-link:hover .navigation-link-icon, .navigation-mobile-link:hover .navigation-mobile-link-icon {
+          transform: none;
+        }
+      }
+      @keyframes slideInLink {to {opacity: 1;transform: translateX(0);}} @keyframes fadeInUp {to {opacity: 1;transform: translateY(0);}}
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+      @keyframes showcaseReveal {to {opacity: 1;transform: translateY(0) scale(1);}} @keyframes markerPulse {0%,100% {transform: scale(1);}50% {transform: scale(1.1);}} @keyframes successPulse {0%,100% {transform: scale(1);box-shadow: 0 0 0 0 rgba(var(--color-accent), 0.4);}50% {transform: scale(1.05);box-shadow: 0 0 0 20px rgba(var(--color-accent), 0);}}
+      @media (prefers-reduced-motion: reduce) {
+        .footer-wave-divider svg {
+          animation: none;
+        }
+        .footer-social-link, .footer-social-link svg, .footer-link, .footer-contact-icon, .footer-legal-link {
+          transition: none;
+        }
+        .footer-social-link:hover svg {
+          transform: none;
+        }
+        .footer-contact-item:hover .footer-contact-icon {
+          transform: scale(1.05);
+        }
+      }
+      @keyframes waveFloat {0%,100% {transform: translateX(0);}50% {transform: translateX(-2%);}}
+    </style>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation-container">
+        <a href="/">
+          <div aria-label="qisqarest homepage" class="navigation-logo">
+            <span class="navigation-logo-text">
+              <span>qisqa </span>
+              <span class="navigation-navigation-logo-accent1">rest</span>
+            </span>
+          </div>
+        </a>
+        <div class="navigation-links">
+          <a href="#locations">
+            <div class="navigation-link">
+              <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" class="navigation-link-icon">
+                <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+              <span>Locations</span>
+            </div>
+          </a>
+          <a href="#features">
+            <div class="navigation-link">
+              <span>Features</span>
+            </div>
+          </a>
+          <a href="#pricing">
+            <div class="navigation-link">
+              <span>Pricing</span>
+            </div>
+          </a>
+          <a href="#about">
+            <div class="navigation-link">
+              <span>About</span>
+            </div>
+          </a>
+          <a href="book-a-pod.html">
+            <div class="btn-primary navigation-cta btn">
+              <span>Book a Pod </span>
+            </div>
+          </a>
+        </div>
+        <button aria-label="Toggle navigation menu" aria-expanded="false" class="navigation-toggle">
+          <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" class="navigation-navigation-toggle-icon">
+            <path d="M4 5h16M4 12h16M4 19h16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="navigation-mobile-overlay">
+        <div class="navigation-mobile-header">
+          <a href="/">
+            <div aria-label="qisqarest homepage" class="navigation-mobile-logo">
+              <span class="navigation-logo-text">
+                <span>qisqa </span>
+                <span class="navigation-navigation-logo-accent2">rest</span>
+              </span>
+            </div>
+          </a>
+          <button aria-label="Close navigation menu" class="navigation-mobile-close">
+            <svg width="28" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="navigation-mobile-content">
+          <a href="#locations">
+            <div class="navigation-mobile-link">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" class="navigation-mobile-link-icon">
+                <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+              <span>Locations</span>
+            </div>
+          </a>
+          <a href="#features">
+            <div class="navigation-mobile-link">
+              <span>Features</span>
+            </div>
+          </a>
+          <a href="#pricing">
+            <div class="navigation-mobile-link">
+              <span>Pricing</span>
+            </div>
+          </a>
+          <a href="#about">
+            <div class="navigation-mobile-link">
+              <span>About</span>
+            </div>
+          </a>
+          <a href="book-a-pod.html">
+            <div class="btn-primary btn-lg navigation-mobile-cta btn">
+              <span>Book a Pod </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-wrapper">
+      <video src="https://videos.pexels.com/video-files/34796501/14753480_640_360_60fps.mp4" loop="true" muted="true" autoPlay="true" playsInline="true" class="hero-background-video"></video>
+      <div class="hero-overlay"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text-block">
+            <h1 class="hero-title book-a-pod-hero-title">
+              Book Your Rest in Minutes
+            </h1>
+            <p class="book-a-pod-hero-subtitle hero-subtitle">
+              Reserve pods by the hour. Pay only for the time you need. Rest when you need it most.
+            </p>
+            <div class="hero-stats">
+              <div class="hero-stat-item">
+                <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                  <path d="M12 6v6l4 2" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  <circle r="10" cx="12" cy="12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></circle>
+                </svg>
+                <span>1-12 Hour Rentals</span>
+              </div>
+              <div class="hero-stat-item">
+                <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                  <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+                <span>Instant Booking</span>
+              </div>
+              <div class="hero-stat-item">
+                <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                  <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+                <span>50+ Locations</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-booking-card">
+            <div class="hero-card-header">
+              <span class="hero-card-badge">Available Now</span>
+              <h3 class="hero-card-title">Start Your Booking</h3>
+            </div>
+            <div class="hero-booking-form">
+              <div class="hero-form-group">
+                <label class="hero-form-label">How Many Hours?</label>
+                <div class="hero-time-selector">
+                  <button class="hero-time-btn hero-time-active">
+                    1h
+                  </button>
+                  <button class="hero-time-btn">2h</button>
+                  <button class="hero-time-btn">4h</button>
+                  <button class="hero-time-btn">6h</button>
+                  <button class="hero-time-btn">8h</button>
+                  <input type="number" max="12" min="1" placeholder="Custom" class="hero-time-input" />
+                </div>
+              </div>
+              <div class="hero-form-group">
+                <label class="hero-form-label">Nearest Location</label>
+                <div class="hero-location-input">
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                    <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                  <input type="text" placeholder="Enter your current location" class="hero-location-field" />
+                </div>
+              </div>
+              <div class="hero-availability-list">
+                <div class="hero-availability-item">
+                  <div class="hero-availability-info">
+                    <span class="hero-availability-name">
+                      Downtown Terminal
+                    </span>
+                    <span class="hero-availability-distance">
+                      1.2 km away
+                    </span>
+                  </div>
+                  <span class="hero-availability-status">
+                    3 Available
+                  </span>
+                </div>
+                <div class="hero-availability-item">
+                  <div class="hero-availability-info">
+                    <span class="hero-availability-name">
+                      Airport Hub
+                    </span>
+                    <span class="hero-availability-distance">
+                      2.8 km away
+                    </span>
+                  </div>
+                  <span class="hero-availability-status">
+                    5 Available
+                  </span>
+                </div>
+                <div class="hero-availability-item">
+                  <div class="hero-availability-info">
+                    <span class="hero-availability-name">
+                      City Center Station
+                    </span>
+                    <span class="hero-availability-distance">
+                      3.5 km away
+                    </span>
+                  </div>
+                  <span class="hero-availability-status">
+                    2 Available
+                  </span>
+                </div>
+              </div>
+              <button class="btn-primary hero-cta-btn btn">
+                <span>Reserve Now</span>
+                <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                  <path d="M5 12h14m-7-7l7 7l-7 7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="booking-wrapper">
+      <div class="booking-container">
+        <div class="booking-header">
+          <h2 class="section-title">Complete Your Booking</h2>
+          <p class="section-subtitle">
+            Follow these simple steps to reserve your pod
+          </p>
+        </div>
+        <div class="booking-bento">
+          <div class="booking-feature-card">
+            <div class="booking-feature-header">
+              <div class="booking-step-indicator">
+                <span class="booking-step-current">Step 2 of 4</span>
+                <div class="booking-progress-bar">
+                  <div class="booking-progress-fill"></div>
+                </div>
+              </div>
+            </div>
+            <div class="booking-selection-summary">
+              <h3 class="booking-summary-title">Your Selection</h3>
+              <div class="booking-summary-grid">
+                <div class="booking-summary-item">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 6v6l4 2"></path>
+                      <circle r="10" cx="12" cy="12"></circle>
+                    </g>
+                  </svg>
+                  <div class="booking-summary-details">
+                    <span class="booking-summary-label">Duration</span>
+                    <span class="booking-summary-value">4 Hours</span>
+                  </div>
+                </div>
+                <div class="booking-summary-item">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M8 2v4m8-4v4"></path>
+                      <rect x="3" y="4" rx="2" width="18" height="18"></rect>
+                      <path d="M3 10h18"></path>
+                    </g>
+                  </svg>
+                  <div class="booking-summary-details">
+                    <span class="booking-summary-label">Check-in</span>
+                    <span class="booking-summary-value">
+                      Today, 2:30 PM
+                    </span>
+                  </div>
+                </div>
+                <div class="booking-summary-item">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 6v6l4 2"></path>
+                      <circle r="10" cx="12" cy="12"></circle>
+                    </g>
+                  </svg>
+                  <div class="booking-summary-details">
+                    <span class="booking-summary-label">Check-out</span>
+                    <span class="booking-summary-value">
+                      Today, 6:30 PM
+                    </span>
+                  </div>
+                </div>
+                <div class="booking-summary-item">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                  <div class="booking-summary-details">
+                    <span class="booking-summary-label">Location</span>
+                    <span class="booking-summary-value">
+                      Downtown Terminal
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="booking-live-price">
+                <span class="booking-price-label">Total Price</span>
+                <span class="booking-price-amount">$32.00</span>
+                <span class="booking-price-unit">$8/hour × 4 hours</span>
+              </div>
+            </div>
+            <button class="btn-secondary booking-edit-btn btn">
+              Edit Details
+            </button>
+          </div>
+          <div class="booking-small-card">
+            <div class="booking-amenity-icon">
+              <svg width="32" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
+                <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+            </div>
+            <h4 class="booking-card-title">Premium Bedding</h4>
+            <p class="booking-card-description">
+              High-quality mattress and fresh linens included
+            </p>
+          </div>
+          <div class="booking-small-card">
+            <div class="booking-amenity-icon">
+              <svg width="32" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
+                <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                <circle r=".5" cx="7.5" cy="7.5" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <h4 class="booking-card-title">Free WiFi</h4>
+            <p class="booking-card-description">
+              High-speed internet access available
+            </p>
+          </div>
+          <div class="booking-small-card">
+            <div class="booking-amenity-icon">
+              <svg width="32" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
+                <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+            </div>
+            <h4 class="booking-card-title">Climate Control</h4>
+            <p class="booking-card-description">
+              Individual AC and heating systems
+            </p>
+          </div>
+          <div class="booking-small-card">
+            <div class="booking-amenity-icon">
+              <svg width="32" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="11" rx="2" ry="2" width="18" height="11"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </g>
+              </svg>
+            </div>
+            <h4 class="booking-card-title">Secure Lock</h4>
+            <p class="booking-card-description">
+              Digital keypad access for your safety
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="showcase-wrapper">
+      <div class="showcase-container">
+        <div class="showcase-sticky-section">
+          <div class="showcase-text-content">
+            <h2 class="section-title">Choose Your Pod</h2>
+            <p class="section-content">
+              Browse our available pods and select the one that fits your needs. Each pod is designed for maximum comfort and privacy.
+            </p>
+          </div>
+          <div class="showcase-pod-details">
+            <div class="showcase-detail-item">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+              <span>Complete Privacy</span>
+            </div>
+            <div class="showcase-detail-item">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+              <span>Premium Comfort</span>
+            </div>
+            <div class="showcase-detail-item">
+              <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+              <span>Quick Access</span>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-gallery">
+          <div class="showcase-pod-card">
+            <div class="showcase-pod-image">
+              <img alt="Standard Pod Interior" src="https://images.pexels.com/photos/10171454/pexels-photo-10171454.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <div class="showcase-pod-badge">
+                <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+                <span>Available</span>
+              </div>
+            </div>
+            <div class="showcase-pod-info">
+              <div class="showcase-pod-header">
+                <h3 class="showcase-pod-name">Standard Pod</h3>
+                <span class="showcase-pod-price">$8/hr</span>
+              </div>
+              <p class="showcase-pod-description">
+                Comfortable single bed with all essential amenities for a perfect rest
+              </p>
+              <div class="showcase-pod-specs">
+                <span class="showcase-pod-spec">Single Bed</span>
+                <span class="showcase-pod-spec">12 m²</span>
+                <span class="showcase-pod-spec">High Privacy</span>
+              </div>
+              <button class="btn-outline btn showcase-select-btn">Select Pod </button>
+            </div>
+          </div>
+          <div class="showcase-pod-card">
+            <div class="showcase-pod-image">
+              <img alt="Premium Pod Interior" src="https://images.pexels.com/photos/12918660/pexels-photo-12918660.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <div class="showcase-pod-badge">
+                <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+                <span>Available</span>
+              </div>
+            </div>
+            <div class="showcase-pod-info">
+              <div class="showcase-pod-header">
+                <h3 class="showcase-pod-name">Premium Pod</h3>
+                <span class="showcase-pod-price">$12/hr</span>
+              </div>
+              <p class="showcase-pod-description">
+                Spacious pod with premium bedding and workspace area
+              </p>
+              <div class="showcase-pod-specs">
+                <span class="showcase-pod-spec">Queen Bed</span>
+                <span class="showcase-pod-spec">18 m²</span>
+                <span class="showcase-pod-spec">Extra Amenities</span>
+              </div>
+              <button class="btn-outline btn showcase-select-btn">Select Pod </button>
+            </div>
+          </div>
+          <div class="showcase-pod-card">
+            <div class="showcase-pod-image">
+              <img alt="Deluxe Pod Interior" src="https://images.pexels.com/photos/7746106/pexels-photo-7746106.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <div class="showcase-pod-badge showcase-pod-badge-limited">
+                <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                  <path d="M12 6v6l4 2" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  <circle r="10" cx="12" cy="12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></circle>
+                </svg>
+                <span>1 Left</span>
+              </div>
+            </div>
+            <div class="showcase-pod-info">
+              <div class="showcase-pod-header">
+                <h3 class="showcase-pod-name">Deluxe Suite</h3>
+                <span class="showcase-pod-price">$18/hr</span>
+              </div>
+              <p class="showcase-pod-description">
+                Luxury suite with private bathroom and lounge area
+              </p>
+              <div class="showcase-pod-specs">
+                <span class="showcase-pod-spec">King Bed</span>
+                <span class="showcase-pod-spec">25 m²</span>
+                <span class="showcase-pod-spec">Private Bath</span>
+              </div>
+              <button class="btn-outline btn showcase-select-btn">Select Pod </button>
+            </div>
+          </div>
+          <div class="showcase-pod-card">
+            <div class="showcase-pod-image">
+              <img alt="Compact Pod Interior" src="https://images.pexels.com/photos/8243095/pexels-photo-8243095.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <div class="showcase-pod-badge">
+                <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+                <span>Available</span>
+              </div>
+            </div>
+            <div class="showcase-pod-info">
+              <div class="showcase-pod-header">
+                <h3 class="showcase-pod-name">Express Pod</h3>
+                <span class="showcase-pod-price">$6/hr</span>
+              </div>
+              <p class="showcase-pod-description">
+                Budget-friendly option perfect for quick power naps
+              </p>
+              <div class="showcase-pod-specs">
+                <span class="showcase-pod-spec">Single Bed</span>
+                <span class="showcase-pod-spec">8 m²</span>
+                <span class="showcase-pod-spec">Essential Amenities</span>
+              </div>
+              <button class="btn-outline btn showcase-select-btn">Select Pod </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="location-wrapper">
+      <div class="location-container">
+        <div class="location-header">
+          <h2 class="section-title">Find Your Nearest Pod</h2>
+          <p class="section-subtitle">
+            Interactive map showing all available qisqarest locations around you
+          </p>
+        </div>
+        <div class="location-bento">
+          <div class="location-map-card">
+            <div class="location-map-placeholder">
+              <img alt="Map Interface" src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <div class="location-map-overlay">
+                <div class="location-marker-active location-map-marker">
+                  <svg width="32" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
+                    <path d="m3 11l19-9l-9 19l-2-8z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="location-map-controls">
+                  <button class="location-control-btn">
+                    <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                      <path d="m3 11l19-9l-9 19l-2-8z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="location-selected-info">
+              <h3 class="location-info-title">Downtown Terminal</h3>
+              <div class="location-info-details">
+                <div class="location-info-item">
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                    <path d="m3 11l19-9l-9 19l-2-8z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                  <span>1.2 km away</span>
+                </div>
+                <div class="location-info-item">
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 6v6l4 2"></path>
+                      <circle r="10" cx="12" cy="12"></circle>
+                    </g>
+                  </svg>
+                  <span>5 min drive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location-info-card">
+            <div class="location-distance-display">
+              <span class="location-distance-number">1.2</span>
+              <span class="location-distance-unit">km</span>
+            </div>
+            <p class="location-distance-label">Distance from you</p>
+          </div>
+          <div class="location-info-card">
+            <div class="location-time-display">
+              <svg width="40" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 6v6l4 2"></path>
+                  <circle r="10" cx="12" cy="12"></circle>
+                </g>
+              </svg>
+              <span class="location-time-number">5 min</span>
+            </div>
+            <p class="location-time-label">Estimated arrival</p>
+          </div>
+          <div class="location-info-card">
+            <div class="location-pods-display">
+              <span class="location-pods-number">3</span>
+              <svg width="32" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
+                <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+            </div>
+            <p class="location-pods-label">Pods available now</p>
+          </div>
+          <div class="location-list-card">
+            <h4 class="location-list-title">Nearby Locations</h4>
+            <div class="location-list">
+              <div class="location-item-active location-list-item">
+                <div class="location-item-icon">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <path d="m3 11l19-9l-9 19l-2-8z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="location-item-details">
+                  <span class="location-item-name">
+                    Downtown Terminal
+                  </span>
+                  <span class="location-item-distance">1.2 km</span>
+                </div>
+                <span class="location-item-availability">3 pods</span>
+              </div>
+              <div class="location-list-item">
+                <div class="location-item-icon">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <path d="m3 11l19-9l-9 19l-2-8z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="location-item-details">
+                  <span class="location-item-name">Airport Hub</span>
+                  <span class="location-item-distance">2.8 km</span>
+                </div>
+                <span class="location-item-availability">5 pods</span>
+              </div>
+              <div class="location-list-item">
+                <div class="location-item-icon">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <path d="m3 11l19-9l-9 19l-2-8z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="location-item-details">
+                  <span class="location-item-name">
+                    City Center Station
+                  </span>
+                  <span class="location-item-distance">3.5 km</span>
+                </div>
+                <span class="location-item-availability">2 pods</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-wrapper">
+      <div class="pricing-container">
+        <div class="pricing-header">
+          <h2 class="section-title">Price Breakdown</h2>
+          <p class="section-subtitle">
+            Transparent pricing with no hidden fees
+          </p>
+        </div>
+        <div class="pricing-bento">
+          <div class="pricing-main-card">
+            <div class="pricing-summary-header">
+              <h3 class="pricing-summary-title">Booking Summary</h3>
+              <span class="pricing-edit-link">Edit Selection</span>
+            </div>
+            <div class="pricing-breakdown">
+              <div class="pricing-line-item">
+                <span class="pricing-item-label">
+                  Standard Pod × 4 hours
+                </span>
+                <span class="pricing-item-amount">$32.00</span>
+              </div>
+              <div class="pricing-line-item">
+                <span class="pricing-item-label">Service Fee</span>
+                <span class="pricing-item-amount">$2.50</span>
+              </div>
+              <div class="pricing-line-item">
+                <span class="pricing-item-label">Tax (8%)</span>
+                <span class="pricing-item-amount">$2.76</span>
+              </div>
+              <div class="pricing-separator"></div>
+              <div class="pricing-line-item pricing-subtotal">
+                <span class="pricing-item-label">Subtotal</span>
+                <span class="pricing-item-amount">$37.26</span>
+              </div>
+            </div>
+            <div class="pricing-promo-section">
+              <div class="pricing-promo-input">
+                <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
+                    <circle r=".5" cx="7.5" cy="7.5" fill="currentColor"></circle>
+                  </g>
+                </svg>
+                <input type="text" placeholder="Enter promo code" class="pricing-promo-field" />
+                <button class="pricing-apply-btn btn-secondary btn">
+                  Apply
+                </button>
+              </div>
+              <div class="pricing-promo-suggestions">
+                <button class="pricing-promo-chip">FIRST10</button>
+                <button class="pricing-promo-chip">DRIVER20</button>
+              </div>
+            </div>
+            <div class="pricing-total">
+              <span class="pricing-total-label">Total Amount</span>
+              <span class="pricing-total-amount">$37.26</span>
+            </div>
+          </div>
+          <div class="pricing-info-card">
+            <svg width="40" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24">
+              <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 6v6l4 2"></path>
+                <circle r="10" cx="12" cy="12"></circle>
+              </g>
+            </svg>
+            <h4 class="pricing-card-title">Flexible Cancellation</h4>
+            <p class="pricing-card-text">
+              Free cancellation up to 1 hour before check-in
+            </p>
+          </div>
+          <div class="pricing-info-card">
+            <svg width="40" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24">
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+            </svg>
+            <h4 class="pricing-card-title">Secure Payment</h4>
+            <p class="pricing-card-text">
+              Your payment information is encrypted and secure
+            </p>
+          </div>
+          <div class="pricing-info-card">
+            <svg width="40" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24">
+              <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+            </svg>
+            <h4 class="pricing-card-title">Instant Confirmation</h4>
+            <p class="pricing-card-text">
+              Receive booking confirmation immediately after payment
+            </p>
+          </div>
+          <div class="pricing-info-card pricing-discount-card">
+            <div class="pricing-discount-badge">
+              <span>Save 20%</span>
+            </div>
+            <h4 class="pricing-card-title">Extended Stay Discount</h4>
+            <p class="pricing-card-text">
+              Book 8+ hours and get 20% off your total
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="confirmation-wrapper">
+      <div class="confirmation-container">
+        <div class="confirmation-content">
+          <div class="confirmation-feature">
+            <div class="confirmation-visual">
+              <div class="confirmation-success-icon">
+                <svg width="80" xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+              </div>
+              <h3 class="confirmation-visual-title">Almost There!</h3>
+              <p class="confirmation-visual-text">
+                Complete your payment to secure your pod reservation
+              </p>
+            </div>
+            <div class="confirmation-booking-card">
+              <img alt="Your selected pod" src="https://images.pexels.com/photos/10171454/pexels-photo-10171454.jpeg?auto=compress&cs=tinysrgb&w=1500" class="confirmation-pod-image" />
+              <div class="confirmation-booking-details">
+                <div class="confirmation-detail-row">
+                  <span class="confirmation-detail-label">Pod Type</span>
+                  <span class="confirmation-detail-value">
+                    Standard Pod
+                  </span>
+                </div>
+                <div class="confirmation-detail-row">
+                  <span class="confirmation-detail-label">Location</span>
+                  <span class="confirmation-detail-value">
+                    Downtown Terminal
+                  </span>
+                </div>
+                <div class="confirmation-detail-row">
+                  <span class="confirmation-detail-label">Duration</span>
+                  <span class="confirmation-detail-value">4 Hours</span>
+                </div>
+                <div class="confirmation-detail-row">
+                  <span class="confirmation-detail-label">Check-in</span>
+                  <span class="confirmation-detail-value">
+                    Today, 2:30 PM
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="confirmation-payment">
+            <h2 class="section-title">Complete Payment</h2>
+            <div class="confirmation-payment-methods">
+              <button class="confirmation-option-active confirmation-payment-option">
+                <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="5" rx="2" width="20" height="14"></rect>
+                    <path d="M2 10h20"></path>
+                  </g>
+                </svg>
+                <span>Credit Card</span>
+              </button>
+              <button class="confirmation-payment-option">
+                <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle r="4" cx="12" cy="7"></circle>
+                  </g>
+                </svg>
+                <span>Digital Wallet</span>
+              </button>
+            </div>
+            <form data-form-id="de6ae206-baba-429d-8103-e2e7ab9eb672" class="confirmation-payment-form">
+              <div class="confirmation-form-group">
+                <label class="confirmation-form-label">Card Number</label>
+                <input type="text" id="thq_textinput_K9Zj" name="textinput" placeholder="1234 5678 9012 3456" data-form-field-id="thq_textinput_K9Zj" class="confirmation-form-input" />
+              </div>
+              <div class="confirmation-form-row">
+                <div class="confirmation-form-group">
+                  <label class="confirmation-form-label">
+                    Expiry Date
+                  </label>
+                  <input type="text" id="thq_textinput_-Qf4" name="textinput" placeholder="MM/YY" data-form-field-id="thq_textinput_-Qf4" class="confirmation-form-input" />
+                </div>
+                <div class="confirmation-form-group">
+                  <label class="confirmation-form-label">CVV</label>
+                  <input type="text" id="thq_textinput_XHBn" name="textinput" placeholder="123" data-form-field-id="thq_textinput_XHBn" class="confirmation-form-input" />
+                </div>
+              </div>
+              <div class="confirmation-form-group">
+                <label class="confirmation-form-label">
+                  Cardholder Name
+                </label>
+                <input type="text" id="thq_textinput_k1pi" name="textinput" placeholder="John Doe" data-form-field-id="thq_textinput_k1pi" class="confirmation-form-input" />
+              </div>
+            </form>
+            <div class="confirmation-total-display">
+              <span class="confirmation-total-label">Total to Pay</span>
+              <span class="confirmation-total-amount">$37.26</span>
+            </div>
+            <button class="btn-primary confirmation-pay-btn btn">
+              <span>Confirm & Pay</span>
+              <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+            </button>
+            <div class="confirmation-after-payment">
+              <h4 class="confirmation-after-title">After Payment:</h4>
+              <div class="confirmation-benefit-list">
+                <div class="confirmation-benefit-item">
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                  <span>Instant booking confirmation email</span>
+                </div>
+                <div class="confirmation-benefit-item">
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                  <span>Digital access code sent via SMS</span>
+                </div>
+                <div class="confirmation-benefit-item">
+                  <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                  <span>Turn-by-turn navigation to your pod</span>
+                </div>
+              </div>
+            </div>
+            <div class="confirmation-secure-badge">
+              <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+              <span>Secure SSL encrypted payment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-wave-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,64 C240,20 480,20 720,64 C960,108 1200,108 1440,64 L1440,120 L0,120 Z" fill="var(--color-surface-elevated)"></path>
+        </svg>
+      </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand-section">
+            <div class="footer-logo-wrapper">
+              <h2 class="footer-logo-text section-title">qisqarest</h2>
+              <div class="footer-logo-accent"></div>
+            </div>
+            <p class="section-content footer-tagline">
+              Rest reimagined. Book rest pods by the hour across the city for drivers who need quality rest without the full-day commitment.
+            </p>
+            <div class="footer-social-links">
+              <a href="#">
+                <div aria-label="Follow us on Facebook" class="footer-social-link">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div aria-label="Follow us on Twitter" class="footer-social-link">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div aria-label="Follow us on Instagram" class="footer-social-link">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="2" y="2" rx="5" ry="5" width="20" height="20"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path>
+                    </g>
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div aria-label="Follow us on LinkedIn" class="footer-social-link">
+                  <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"></path>
+                      <circle r="2" cx="4" cy="4"></circle>
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links-grid">
+            <div class="footer-links-column">
+              <h3 class="footer-column-title">Quick Links</h3>
+              <ul class="footer-links-list">
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>Home</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>About Us</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>How It Works</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#book-a-pod">
+                    <div class="footer-link">
+                      <span>Book a Pod</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>Locations</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>Pricing</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h3 class="footer-column-title">Support</h3>
+              <ul class="footer-links-list">
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>FAQ</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>Contact Support</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>Safety Guidelines</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>Cancellation Policy</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>Partner With Us</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="footer-link">
+                      <span>Careers</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h3 class="footer-column-title">Contact Info</h3>
+              <ul class="footer-contact-list">
+                <li class="footer-contact-item">
+                  <div class="footer-contact-icon">
+                    <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                      <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                    </svg>
+                  </div>
+                  <span class="footer-contact-text">
+                    +1 (555) 123-4567
+                  </span>
+                </li>
+                <li class="footer-contact-item">
+                  <div class="footer-contact-icon">
+                    <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                      <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                        <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="footer-contact-text">
+                    hello@qisqarest.com
+                  </span>
+                </li>
+                <li class="footer-contact-item">
+                  <div class="footer-contact-icon">
+                    <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                      <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M12 6v6l4 2"></path>
+                        <circle r="10" cx="12" cy="12"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="footer-contact-text">
+                    24/7 Support Available
+                  </span>
+                </li>
+                <li class="footer-contact-item">
+                  <div class="footer-contact-icon">
+                    <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24">
+                      <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M17.97 9.304A8 8 0 0 0 2 10c0 4.69 4.887 9.562 7.022 11.468m12.356-4.842a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"></path>
+                        <circle r="3" cx="10" cy="10"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="footer-contact-text">
+                    Multiple City Locations
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright">
+              © 2025 qisqarest. All rights reserved.
+            </p>
+            <div class="footer-legal-links">
+              <a href="#">
+                <div class="footer-legal-link">
+                  <span>Privacy Policy</span>
+                </div>
+              </a>
+              <span class="footer-legal-separator">|</span>
+              <a href="#">
+                <div class="footer-legal-link">
+                  <span>Terms of Service</span>
+                </div>
+              </a>
+              <span class="footer-legal-separator">|</span>
+              <a href="#">
+                <div class="footer-legal-link">
+                  <span>Cookie Policy</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="https://play.teleporthq.io/signup">
+      <div aria-label="Sign up to TeleportHQ" class="book-a-pod-container8">
+        <svg width="24" height="24" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="book-a-pod-icon205">
+          <path d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z" fill="#B23ADE"></path>
+          <path d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z" fill="#FF5C5C"></path>
+          <path d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z" fill="#2874DE"></path>
+        </svg>
+        <span class="book-a-pod-text31">Built in TeleportHQ</span>
+      </div>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>
