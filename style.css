@@ -1749,10 +1749,11 @@
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: 0.01em;}
-  @media(max-width: 991px) {.thq-grid-4 {
+  @media(max-width: 900px) {.thq-grid-4 {
       grid-template-columns: 1fr 1fr 1fr;}
   .navigation-container {padding: var(--spacing-md) var(--spacing-lg);}
-  .navigation-links {gap: var(--spacing-md);}
+  .navigation-links {gap: var(--spacing-md);
+    display: none;}
   .navigation-link {padding: var(--spacing-sm);
       font-size: var(--font-size-sm);}
   .footer-wave-divider {height: 80px;}
