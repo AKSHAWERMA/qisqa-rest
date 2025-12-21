@@ -8,17 +8,18 @@
     --spacing-2xl: 2rem;
     --spacing-3xl: 3rem;
     --spacing-4xl: 4rem;
-    --color-accent: #e24f00;
+    --color-accent: #8be200;
     --color-border: rgba(193, 217, 255, 0.14);
     --font-size-lg: clamp(1.05rem, 1.6vw + 0.4rem, 1.25rem);
     --font-size-sm: clamp(0.8rem, 0.8vw + 0.4rem, 0.9rem);
     --font-size-xl: clamp(1.25rem, 2.2vw + 0.5rem, 1.5rem);
     --font-size-xs: clamp(0.65rem, 0.5vw + 0.5rem, 0.75rem);
-    --color-neutral: #2e2e2e;
+    --color-neutral: #f5f1f1;
     --color-outline: rgba(255, 255, 255, 0.06);
     --color-overlay: color-mix(in oklab, #ffffff 40%, transparent);
-    --color-primary: #ff00b3;
+    --color-primary: #007aff;
     --color-surface: #0a0a0d;
+    --color-title: #f9f9fa;
     --divider-value: 1px solid var(--color-outline);
     --font-size-2xl: clamp(1.6rem, 2.8vw + 0.6rem, 2rem);
     --font-size-3xl: clamp(2.5rem, 4.2vw + 0.6rem, 2.8rem);
@@ -438,6 +439,7 @@
   .btn-lg {padding: var(--spacing-lg) var(--spacing-xl);}
   .btn-xl {padding: var(--spacing-xl) var(--spacing-2xl);}
   .section-title {font-size: var(--font-size-3xl);
+    color: var(--color-title);
     font-style: var(--font-style-heading);
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-heading);
@@ -451,6 +453,7 @@
     font-weight: var(--font-weight-heading);
     line-height: var(--line-height-heading);}
   .section-content {font-size: var(--font-size-base);
+    color: var(--color-title);
     font-family: var(--font-family-body);
     font-weight: var(--font-weight-body);
     line-height: var(--line-height-body);
@@ -565,13 +568,16 @@
     padding: var(--spacing-2xl) var(--spacing-xl);
     flex-direction: column;}
   .navigation-logo-text {color: var(--color-surface);
-    font-size: var(--font-size-xl);
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    font-family: var(--font-family-heading);
-    font-weight: 700;
-    white-space: nowrap;
-    letter-spacing: -0.02em;
-    text-transform: lowercase;}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 5px;
+    height: 60px;}
+    .navigation-logo-text h1{
+      text-decoration: none;
+    }
   .navigation-link {gap: var(--spacing-xs);
     color: var(--color-surface);
     display: flex;

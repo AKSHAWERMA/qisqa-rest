@@ -63,12 +63,36 @@
         <a href="/">
           <div aria-label="qisqarest homepage" class="navigation-logo">
             <span class="navigation-logo-text">
-              <span>Dam </span>
-              <span class="navigation-navigation-logo-accent1">ol</span>
+              <img src="IMG_8818.PNG" alt="Example Image" height="60">
+              <h1>DAMOL</h1>
             </span>
           </div>
         </a>
         <div class="navigation-links">
+          <div id="google_translate_element"></div>
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                {
+                  pageLanguage: 'en', // Default language of your website
+                  includedLanguages: 'ru,uz,en', // Languages to include (Russian and Uzbek)
+                  layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+              );
+            }
+          </script>
+          <style>
+            .goog-logo-link,
+            .goog-te-gadget span {
+              display: none !important;
+            }
+          
+            .goog-te-gadget {
+              color: transparent !important;
+            }
+          </style>
+          <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           <a href="#locations">
             <div class="navigation-link">
               <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" class="navigation-link-icon">
@@ -434,7 +458,7 @@
         <div class="showcase-gallery">
           <div class="showcase-pod-card">
             <div class="showcase-pod-image">
-              <img alt="Standard Pod Interior" src="https://images.pexels.com/photos/10171454/pexels-photo-10171454.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <img alt="Standard Pod Interior" src="images/photo_2_2025-12-21_17-32-26.jpg" />
               <div class="showcase-pod-badge">
                 <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -460,7 +484,7 @@
           </div>
           <div class="showcase-pod-card">
             <div class="showcase-pod-image">
-              <img alt="Premium Pod Interior" src="https://images.pexels.com/photos/12918660/pexels-photo-12918660.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <img alt="Premium Pod Interior" src="images/photo_7_2025-12-21_17-32-26.jpg" />
               <div class="showcase-pod-badge">
                 <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -486,7 +510,7 @@
           </div>
           <div class="showcase-pod-card">
             <div class="showcase-pod-image">
-              <img alt="Deluxe Pod Interior" src="https://images.pexels.com/photos/7746106/pexels-photo-7746106.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <img alt="Deluxe Pod Interior" src="images/photo_21_2025-12-21_17-32-26.jpg" />
               <div class="showcase-pod-badge showcase-pod-badge-limited">
                 <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
                   <path d="M12 6v6l4 2" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -513,7 +537,34 @@
           </div>
           <div class="showcase-pod-card">
             <div class="showcase-pod-image">
-              <img alt="Compact Pod Interior" src="https://images.pexels.com/photos/8243095/pexels-photo-8243095.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <img alt="Deluxe Pod Interior" src="images/photo_26_2025-12-21_17-32-26.jpg" />
+              <div class="showcase-pod-badge showcase-pod-badge-limited">
+                <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                  <path d="M12 6v6l4 2" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  <circle r="10" cx="12" cy="12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></circle>
+                </svg>
+                <span>1 Left</span>
+              </div>
+            </div>
+            <div class="showcase-pod-info">
+              <div class="showcase-pod-header">
+                <h3 class="showcase-pod-name">Deluxe Suite</h3>
+                <span class="showcase-pod-price">$18/hr</span>
+              </div>
+              <p class="showcase-pod-description">
+                Luxury suite with private bathroom and lounge area
+              </p>
+              <div class="showcase-pod-specs">
+                <span class="showcase-pod-spec">King Bed</span>
+                <span class="showcase-pod-spec">25 m²</span>
+                <span class="showcase-pod-spec">Private Bath</span>
+              </div>
+              <button class="btn-outline btn showcase-select-btn">Select Pod </button>
+            </div>
+          </div>
+          <div class="showcase-pod-card">
+            <div class="showcase-pod-image">
+              <img alt="Compact Pod Interior" src="images/photo_14_2025-12-21_17-32-26.jpg" />
               <div class="showcase-pod-badge">
                 <svg width="16" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -544,14 +595,11 @@
       <div class="location-container">
         <div class="location-header">
           <h2 class="section-title">Find Your Nearest Pod</h2>
-          <p class="section-subtitle">
-            Interactive map showing all available Damol locations around you
-          </p>
         </div>
         <div class="location-bento">
           <div class="location-map-card">
             <div class="location-map-placeholder">
-              <img alt="Map Interface" src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1500" />
+              <img alt="Map Interface" src="images/photo_19_2025-12-21_17-32-26.jpg" />
               <div class="location-map-overlay">
                 <div class="location-marker-active location-map-marker">
                   <svg width="32" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
@@ -668,9 +716,6 @@
       <div class="pricing-container">
         <div class="pricing-header">
           <h2 class="section-title">Price Breakdown</h2>
-          <p class="section-subtitle">
-            Transparent pricing with no hidden fees
-          </p>
         </div>
         <div class="pricing-bento">
           <div class="pricing-main-card">
@@ -950,100 +995,8 @@
             </div>
           </div>
           <div class="footer-links-grid">
-            <div class="footer-links-column">
-              <h3 class="footer-column-title">Quick Links</h3>
-              <ul class="footer-links-list">
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>Home</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>About Us</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>How It Works</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#book-a-pod">
-                    <div class="footer-link">
-                      <span>Book a Pod</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>Locations</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>Pricing</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-links-column">
-              <h3 class="footer-column-title">Support</h3>
-              <ul class="footer-links-list">
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>FAQ</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>Contact Support</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>Safety Guidelines</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>Cancellation Policy</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>Partner With Us</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="footer-link">
-                      <span>Careers</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
+            
             <div class="footer-links-column">
               <h3 class="footer-column-title">Contact Info</h3>
               <ul class="footer-contact-list">
@@ -1054,7 +1007,7 @@
                     </svg>
                   </div>
                   <span class="footer-contact-text">
-                    +1 (555) 123-4567
+                    95 11 77 221
                   </span>
                 </li>
                 <li class="footer-contact-item">
